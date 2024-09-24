@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شمرون کباب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-bar">
+        <div class="left-bar">
+            <button id="phone-btn" style="padding: 14px 16px;">ورود</button>
+            <a href="https://www.shemroonkabab.com/contact" style="padding: 14px 16px;">تماس باما</a>
+            <a href="https://www.shemroonkabab.com/about" style="padding: 14px 16px;">درباره ما</a>
+            <a href="https://www.shemroonkabab.com/order" style="padding: 14px 16px;">سفارش اینترنتی</a>
+            <a href="https://www.shemroonkabab.com/" style="padding: 14px 16px;">صفحه اصلی</a>
+            <div id="phone-modal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="phone-form">
+                        <label for="phone">شماره تلفن:</label>
+                        <input type="text" id="phone" name="phone" placeholder="شماره تلفن خود را وارد کنید">
+                        <button type="submit">ارسال</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="right-bar">
+            <img src="https://www.shemroonkabab.com/2.17.10/img/79320124d662824a23d39e22cb52061c.png" alt="product-logo" class="responsive-image">
+        </div>
+    </div>
+
+    <div>
+        <img src="cover.png" alt="nav-pic" class="responsive-image">
+    </div>
+
+    <div style="background-color: #f0f0f0;"></div>
+
+    <div class="container-body">
+        <div class="body-left" style="padding-right: 100px;">
+            <h2 style="text-align: end;">سبد خرید</h2>
+            <div id="cart-display" style="background-color: #fff; padding: 10px; border: 1px solid #ccc; margin-bottom: 20px;"></div>
+            <div id="total-price" style="text-align: right;">مجموع: 0 تومان</div>
+        </div>
+
+        <div class="body-center">
+            <img src="order-menu.png" alt="order-menu" class="responsive-image">
+            <h2 style="padding-left: 900px;">محصولات</h2>
+            <div class="product-grid first-grid"></div>
+            <div class="product-grid second-grid"></div>
+            <div class="product-grid third-grid"></div>
+            <div class="product-grid fourth-grid"></div>
+            <div id="pagination"></div>
+        </div>
+
+        <div class="body-right"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
